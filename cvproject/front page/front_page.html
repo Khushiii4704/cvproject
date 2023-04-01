@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>front_ page</title>
+  <style>
+    .image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* width: 100%; */
+      /* height: auto; */
+
+    }
+    .logo {
+      padding: 60px 0px 0px 0px;
+      width: 30vw;
+    }
+
+    /* Google Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+    /* Global */
+     html {
+      min-height: 100%;
+      overflow: hidden;
+    }
+
+    body {
+      height: calc(100vh - 8em);
+      color: black;
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+    }
+
+   .line-1 {
+      position: relative;
+      top: 8vh;
+      width: 51vw; 
+      margin: 30px auto auto auto;
+      border-right: 2px solid rgba(255, 255, 255, .75);
+      font-size: 180%;
+      text-align: center;
+      /* white-space: nowrap; */
+      /* overflow-x: hidden; */
+      transform: translateY(-50%);
+    }
+
+    @media screen and (min-width: 1535px) {
+      html {
+      min-height: 100%;
+      overflow: hidden;
+    }
+
+    body {
+      height: calc(100vh - 8em);
+      color: black;
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+    }
+
+    .line-1 {
+      position: relative;
+      top: 8vh;
+      overflow-wrap: break-word;
+      inline-size: 51vw;
+      /* width: 51vw; */
+      margin: 0 auto auto auto;
+      border-right: 2px solid rgba(255, 255, 255, .75);
+      font-size: 180%;
+      text-align: center;
+      white-space: nowrap;
+      overflow-x: hidden;
+      transform: translateY(-50%);
+    }
+
+    /* Animation */
+    .anim-typewriter {
+      animation: typewriter-forward 3s steps(51) 0.5s 1 normal both,
+        blinkTextCursor 500ms steps(51) infinite normal;
+    }
+
+    @keyframes typewriter-forward {
+      0% {
+        width: 0;
+      }
+
+      100% {
+        width: 51vw;
+      }
+    }
+
+    @keyframes blinkTextCursor {
+      from {
+        border-right-color: black;
+      }
+
+      to {
+        border-right-color: transparent;
+      }
+    }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="containor">
+      <div class="image"><img src="background-removebg-preview.png" class="logo" alt="CV"></div>
+    </div>
+    <div class="typewriter">
+      <p class="line-1 anim-typewriter">Upload your achievement and make your resume better.</p>
+    </div>
+
+  </main>
+
+</html>
